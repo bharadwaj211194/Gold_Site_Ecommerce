@@ -17,7 +17,7 @@ pipeline {
             steps {
                 script {
                     // Execute deployment playbook on Deploy Server
-                    sh "ssh ubuntu@172.31.15.53 'ansible-playbook /home/ubuntu/deploy.yaml'"
+                    sh "ssh ubuntu@172.31.1.119 'ansible-playbook /home/ubuntu/deploy.yaml'"
                 }
             }
         }
